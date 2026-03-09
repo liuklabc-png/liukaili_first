@@ -1,20 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
-  <defs>
-    <linearGradient id="linear-gradient" x1="181.5" x2="-25.5" y1="-108.5" y2="238.5" gradientTransform="matrix(0.866, 0.5, -0.5, 0.866, 125.37, -63.21)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#4c73ff"/>
-      <stop offset="1" stop-color="#0a49ff"/>
-    </linearGradient>
-    <linearGradient id="linear-gradient-2" x1="-20.5" x2="193.5" y1="85.5" y2="-103.5" gradientTransform="matrix(0.866, 0.5, -0.5, 0.866, 125.37, -63.21)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#4c73ff"/>
-      <stop offset="1" stop-color="#0a49ff"/>
-    </linearGradient>
-  </defs>
-  <path d="M57.2,100A42.8,42.8,0,1,1,100,142.8,42.91,42.91,0,0,1,57.2,100Zm-1.35,0a41.45,41.45,0,1,0,41.45,41.45A41.5,41.5,0,0,0,55.85,100Z" fill="url(#linear-gradient)"/>
-  <path d="M144.15,100A44.15,44.15,0,1,1,100,144.15,44.2,44.2,0,0,1,144.15,100Zm-1.35,0a42.8,42.8,0,1,0,42.8,42.8A42.91,42.91,0,0,0,142.8,100Z" fill="url(#linear-gradient-2)"/>
-  <path d="M100,55.85A44.15,44.15,0,1,1,55.85,100,44.2,44.2,0,0,1,100,55.85Zm0-1.35A42.8,42.8,0,1,0,57.2,100,42.91,42.91,0,0,0,100,54.5Z" fill="#0a49ff"/>
-  <path d="M100,144.15A44.15,44.15,0,1,1,144.15,100,44.2,44.2,0,0,1,100,144.15Zm0-1.35A42.8,42.8,0,1,0,142.8,100,42.91,42.91,0,0,0,100,142.8Z" fill="#4c73ff"/>
-  <path d="M142.8,100A42.8,42.8,0,1,1,100,142.8,42.91,42.91,0,0,1,142.8,100Zm-1.35,0a41.45,41.45,0,1,0,41.45,41.45A41.5,41.5,0,0,0,141.45,100Z" fill="#0a49ff"/>
-  <path d="M57.2,100A42.8,42.8,0,1,1,100,142.8,42.91,42.91,0,0,1,57.2,100Zm1.35,0a41.45,41.45,0,1,0-41.45,41.45A41.5,41.5,0,0,0,58.55,100Z" fill="#4c73ff"/>
-  <path d="M100,57.2A42.8,42.8,0,1,1,57.2,100,42.91,42.91,0,0,1,100,57.2Zm0,1.35A41.45,41.45,0,1,0,58.55,100,41.5,41.5,0,0,0,100,58.55Z" fill="url(#linear-gradient)"/>
-  <path d="M100,142.8A42.8,42.8,0,1,1,142.8,100,42.91,42.91,0,0,1,100,142.8Zm0-1.35a41.45,41.45,0,1,0,41.45-41.45A41.5,41.5,0,0,0,100,141.45Z" fill="url(#linear-gradient-2)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" rx="32" fill="#1a56db"/>
+  <path d="M80 80h32v96H80zM144 80h32v96h-32z" fill="white"/>
+  <path d="M112 112h48v32h-48z" fill="#1a56db"/>
+  <circle cx="128" cy="64" r="16" fill="white"/>
 </svg>
