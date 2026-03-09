@@ -705,13 +705,7 @@ zollent-slides/
   
 ## 赞赏
 
-开源不易🙏如果本项目对你有价值，欢迎请开发者喝杯咖啡☕️
-
-<img width="240" alt="image" src="https://github.com/user-attachments/assets/fd7a286d-711b-445e-aecf-43e3fe356473" />
-
-感谢以下朋友对项目的无偿赞助支持：
-> @雅俗共赏、@曹峥、@以年观日、@John、@胡yun星Ethan, @azazo1、@刘聪NLP、@🍟、@苍何、@万瑾、@biubiu、@law、@方源、@寒松Falcon
-> 如对赞助列表有疑问，可<a href="mailto:anionex@qq.com">联系作者</a>
+开源不易🙏如果本项目对你有价值，请给个免费的star吧
  
 ## 📈 项目统计
 
