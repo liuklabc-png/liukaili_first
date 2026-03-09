@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="256" src="https://github.com/user-attachments/assets/6f9e4cf9-912d-4faa-9d37-54fb676f547e">
+<img width="256" src="./frontend/public/zollent.svg">
 
 *Vibe your PPT like vibing code.*
 
