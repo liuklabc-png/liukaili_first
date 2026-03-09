@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* 主色 - 蓝色系 */
+  --primary-blue: #1E40AF;
+  --primary-blue-light: #3B82F6;
+  --primary-blue-lighter: #60A5FA;
+  --primary-blue-dark: #1E3A8A;
+  --primary-blue-pale: #EFF6FF;
+
+  /* 辅助色 */
+  --accent-cyan: #06B6D4;
+  --accent-purple: #8B5CF6;
+  --accent-pink: #EC4899;
+
+  /* 中性色 - 黑白灰 */
+  --black: #1A1A1A;
+  --black-80: #374151;
+  --black-60: #6B7280;
+  --black-40: #9CA3AF;
+  --black-20: #E5E7EB;
+  --black-10: #F3F4F6;
+  --white: #FFFFFF;
+
+  /* 功能色 */
+  --success: #10B981;
+  --warning: #F59E0B;
+  --error: #EF4444;
+  --info: #3B82F6;
+
+  /* 玻璃态设计 */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-bg-dark: rgba(30, 41, 59, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+  --glass-blur: 10px;
+
+  /* 过渡 */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* 移动端优化 */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black-10);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--zollent-yellow);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--zollent-yellow-dark);
+}
+
+/* 移动端触摸优化 */
+.touch-manipulation {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 玻璃态设计样式 */
+.glass-effect {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 12px;
+}
+
+.glass-effect-dark {
+  background: var(--glass-bg-dark);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--glass-shadow);
+  border-radius: 12px;
+}
+
+/* 径向渐变背景 */
+.radial-bg {
+  background: radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.1) 0%, rgba(6, 182, 212, 0.05) 90%);
+}
+
+/* 点阵纹理 */
+.dotted-texture {
+  background-image: radial-gradient(var(--primary-blue-light) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: -1px -1px;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+/* 发光边框 */
+.glow-border {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
+
+/* 移动端按钮优化 - 仅针对主要交互按钮 */
+@media (max-width: 640px) {
+  .btn-touch-target,
+  button:not(.no-min-touch-target):not([class*="w-"]):not([class*="h-"]),
+  a:not(.no-min-touch-target):not([class*="w-"]):not([class*="h-"]) {
+    min-height: 44px; /* iOS推荐的最小触摸目标 */
+    min-width: 44px;
+  }
+}
+
+/* 渐变文本动画 */
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Markdown 内容样式 - 仅保留基础容器样式，具体样式由 Markdown.tsx 组件内的 Tailwind 类处理 */
+.markdown-content {
+  line-height: 1.6;
+}
+
+
